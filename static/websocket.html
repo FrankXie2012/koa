@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Websocket Demo</title>
+  </head>
+  <body>
+    <div>
+      <input type="text" placeholder="聊天内容" id="input" />
+      <button id="button">发送</button>
+      <br />
+      <div class="chat-box" id="chatBox"></div>
+    </div>
+    <script>
+      const ws = new WebSocket('ws://localhost:3000')
+      ws.onopen = () => {
+        paragragh('聊天开始...')
+        // ws.send('From client: hello')
+      }
+      ws.onmessage = function (e) {
+        // paragragh('Ws onMessage')
+        paragragh('新垣结衣: ' + e.data)
+      }
+
+      // 聊天记录模板
+      const paragragh = (text) => {
+        const p = document.createElement('p')
+        p.innerHTML = text
+        document.getElementById('chatBox').appendChild(p)
+      }
+
+      // 点击发送
+      document.getElementById('button').onclick = () => {
+        const text = document.getElementById('input').value
+        paragragh('我: ' + text)
+        ws.send(text)
+      }
+    </script>
+  </body>
+</html>

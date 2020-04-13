@@ -1,0 +1,59 @@
+[2020-04-10T17:55:09.316] [ERROR] [Default] - ReferenceError: path is not defined
+    at main.get (C:\Users\Frank\Desktop\koa\controllers\main.js:5:16)
+    at dispatch (C:\Users\Frank\Desktop\koa\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Frank\Desktop\koa\node_modules\koa-router\lib\router.js:368:16
+    at dispatch (C:\Users\Frank\Desktop\koa\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Frank\Desktop\koa\node_modules\koa-compose\index.js:34:12
+    at dispatch (C:\Users\Frank\Desktop\koa\node_modules\koa-router\lib\router.js:373:31)
+    at dispatch (C:\Users\Frank\Desktop\koa\node_modules\koa-compose\index.js:42:32)
+    at cors (C:\Users\Frank\Desktop\koa\node_modules\koa2-cors\dist\index.js:91:15)
+    at dispatch (C:\Users\Frank\Desktop\koa\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (C:\Users\Frank\Desktop\koa\node_modules\koa-bodyparser\index.js:95:11)
+[2020-04-10T17:55:09.549] [INFO] [Default] - GET 200 / 请求参数： {} 响应参数： {"code":-1,"data":null,"msg":"path is not defined"} - ::1 - 244ms
+[2020-04-10T17:55:10.130] [INFO] [Default] - GET 404 /favicon.ico 请求参数： {} 响应参数： undefined - ::1 - 0ms
+[2020-04-10T17:55:45.835] [INFO] [Default] - GET 200 / 请求参数： {} 响应参数： "C:\\Users\\Frank\\Desktop\\test\\websocket.html" - ::1 - 100ms
+[2020-04-10T17:56:01.996] [ERROR] [Default] - C:\Users\Frank\Desktop\koa\test\websocket.html:1
+<!DOCTYPE html>
+^
+
+SyntaxError: Unexpected token '<'
+    at Module._compile (internal/modules/cjs/loader.js:892:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:849:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at main.get (C:\Users\Frank\Desktop\koa\controllers\main.js:6:16)
+    at dispatch (C:\Users\Frank\Desktop\koa\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Frank\Desktop\koa\node_modules\koa-router\lib\router.js:368:16
+    at dispatch (C:\Users\Frank\Desktop\koa\node_modules\koa-compose\index.js:42:32)
+[2020-04-10T17:56:02.172] [INFO] [Default] - GET 200 / 请求参数： {} 响应参数： {"code":-1,"data":null,"msg":"Unexpected token '<'"} - ::1 - 180ms
+[2020-04-10T17:58:57.085] [INFO] [Default] - GET 200 / 请求参数： {} 响应参数： {"_readableState":{"objectMode":false,"highWaterMark":65536,"buffer":{"head":null,"tail":null,"length":0},"length":0,"pipes":null,"pipesCount":0,"flowing":null,"ended":false,"endEmitted":false,"reading":false,"sync":true,"needReadable":false,"emittedReadable":false,"readableListening":false,"resumeScheduled":false,"paused":true,"emitClose":false,"autoDestroy":false,"destroyed":false,"defaultEncoding":"utf8","awaitDrain":0,"readingMore":false,"decoder":null,"encoding":null},"readable":true,"_events":{},"_eventsCount":2,"path":"../test/websocket.html","fd":null,"flags":"r","mode":438,"end":null,"autoClose":true,"bytesRead":0,"closed":false} - ::1 - 205ms
+[2020-04-10T17:59:34.974] [ERROR] [Default] - C:\Users\Frank\Desktop\koa\test\websocket.html:1
+<!DOCTYPE html>
+^
+
+SyntaxError: Unexpected token '<'
+    at Module._compile (internal/modules/cjs/loader.js:892:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:849:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at main.get (C:\Users\Frank\Desktop\koa\controllers\main.js:6:16)
+    at dispatch (C:\Users\Frank\Desktop\koa\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Frank\Desktop\koa\node_modules\koa-router\lib\router.js:368:16
+    at dispatch (C:\Users\Frank\Desktop\koa\node_modules\koa-compose\index.js:42:32)
+[2020-04-10T17:59:35.243] [INFO] [Default] - GET 200 / 请求参数： {} 响应参数： {"code":-1,"data":null,"msg":"Unexpected token '<'"} - ::1 - 283ms
+[2020-04-10T18:00:19.206] [ERROR] [Default] - ReferenceError: Cannot access 'path' before initialization
+    at main.get (C:\Users\Frank\Desktop\koa\controllers\main.js:6:24)
+    at dispatch (C:\Users\Frank\Desktop\koa\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Frank\Desktop\koa\node_modules\koa-router\lib\router.js:368:16
+    at dispatch (C:\Users\Frank\Desktop\koa\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Frank\Desktop\koa\node_modules\koa-compose\index.js:34:12
+    at dispatch (C:\Users\Frank\Desktop\koa\node_modules\koa-router\lib\router.js:373:31)
+    at dispatch (C:\Users\Frank\Desktop\koa\node_modules\koa-compose\index.js:42:32)
+    at cors (C:\Users\Frank\Desktop\koa\node_modules\koa2-cors\dist\index.js:91:15)
+    at dispatch (C:\Users\Frank\Desktop\koa\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (C:\Users\Frank\Desktop\koa\node_modules\koa-bodyparser\index.js:95:11)
+[2020-04-10T18:00:19.271] [INFO] [Default] - GET 200 / 请求参数： {} 响应参数： {"code":-1,"data":null,"msg":"Cannot access 'path' before initialization"} - ::1 - 68ms

@@ -14,4 +14,8 @@ router.post('/', controllers.main.post)
 router.get('/test', controllers.test.get)
 router.post('/test', controllers.test.post)
 
+// websocket路由
+router.get('/websocket', controllers.websocket.get)
+router.post('/websocket', controllers.websocket.post)
+
 module.exports = router

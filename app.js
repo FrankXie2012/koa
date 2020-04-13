@@ -41,4 +41,16 @@ const wss = new WebSocketServer({
 })
 wss.on('connection', (ws) => {
   console.log(ws)
+  console.log('Server: received connection')
+  ws.on('message', function incoming(message) {
+    console.log('Server: received: %s', message)
+    ws.send('我相信' + message)
+  })
+  // ws.send('world')
 })
+// 广播
+wss.broadcast = function (data) {
+  wss.clients.forEach(function (client) {
+    client.send(data)
+  })
+}
